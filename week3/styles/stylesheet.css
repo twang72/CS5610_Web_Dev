@@ -24,4 +24,14 @@ p:first-of-type {
     margin-bottom: 10px;
 }
 
+a[href*="github"]:hover {
+    color: crimson;
+}
 
+h2 ::first-letter{
+    font-size: 3rem;
+}
+
+a[href*="github"]::after{
+    content: url("../images/GitHub-Mark-32px.png")
+}
