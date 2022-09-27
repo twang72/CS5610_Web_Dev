@@ -35,3 +35,15 @@ h2 ::first-letter{
 a[href*="github"]::after{
     content: url("../images/GitHub-Mark-32px.png")
 }
+
+header :last-of-type{
+    margin-left: 20px;
+}
+
+.education .education-list > li:first-child{
+    font-style: italic;
+}
+
+.skills ul{
+    list-style-type: none;
+}
