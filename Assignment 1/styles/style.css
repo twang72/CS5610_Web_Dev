@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Override default information */
+
+* {
+    font-family:'Roboto', sans-serif;
+    font-size: 100%;
+    color:rgba(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    text-align: center;
+    width:100%;
+    font-size: 35px;
+}
+
+.navtext {
+    padding:1em;
+    position: fixed;
+    color:floralwhite;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+}
+
+.navtext .natitle {
+    display:inline;
+    padding-right: 3em;
+}
+
+.navtext .natitle .navhome {
+    text-decoration: none;
+    color: brown;
+}
+
+.navtext .navitem {
+    display: inline;
+    font-size: 80%;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 0px 10px;
+}
+
+.backimg {
+    bottom: 20px;
+}
+
+.introduction {
+    z-index: 100;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform:capitalize;
+    color: aliceblue;
+    word-wrap: break-word;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.content {
+    width: 100%;
+    padding-bottom: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer-list {
+    display: inline;
+}
+
+
