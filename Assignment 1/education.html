@@ -6,24 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/b7ae1646de.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="education-body">
     <header class="navbar">
-        <div class="navtext">
-            <h1 class="navtitle">
-                <a class="navhome" href="Index.html">Yichen Wang</a>
-            </h1>
-            <a class="navitem" href="about.html">About Me</a>
-            <a class="navitem" href="work.html">Work Experience</a>
-            <a class="navitem" href="education.html">Education</a>
-        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="navitem" href="Index.html">Home</a></li>
+                <li><a class="navitem" href="about.html">About Me</a></li>
+                <li><a class="navitem" href="education.html">Education</a></li>
+            </ul>    
+        </nav>
     </header>
+
+    <main class="education-main">
+        <h1 class="education-title">My Education Experience at Northeastern University</h1>
+        <a href="https://www.northeastern.edu/">
+            <img
+            src="images/Northeastern_University_seal.svg.png"
+            alt="Northeastern University Logo"
+            width="200"
+            height="200">
+        </a>
+        <h2 class="relevant-course">Relevant Courses</h2>
+        <nav class="course-list">
+            <ul>
+                <li>CS 5001 Intensive Foundations of CS</li>
+                <li>CS 5002 Discrete Mathematics</li>
+                <li>CS 5004 Object-Oriented Design</li>
+                <li>CS 5008 Data Structures & Algorithms</li>
+                <li>CS 5200 Database Management Systems</li>
+                <li>CS 5340 Human-Computer Interaction</li>
+                <li>CS 5520 Mobile App Development</li>
+                <li>CS 5610 Web Development</li>
+                <li>CS 5800 Graduate Algorithms</li>
+                <li>CS 6140 Machine Learning</li>
+            </ul>
+        </nav>
+    </main>
+
+
     <footer>
-        <p>Author: Yichen Wang</p>
-        <p class="copyright">© Copyright 2022 by Yichen. All Rights Reserved.</p>
-        <p class="github"><a href="https://github.com/twang72">Github</a></p>
-        <p><a href="mailto:wang.yichen1@northeastern.edu">wang.yichen1@northeastern.edu</a></p>
+        <ul class="footer-list">
+            <li><a>© Copyright 2022 by Yichen. All Rights Reserved.</a></li> 
+            <li><a href="https://github.com/twang72"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="mailto:wang.yichen1@northeastern.edu"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
     </footer>
 </body>
 </html>
