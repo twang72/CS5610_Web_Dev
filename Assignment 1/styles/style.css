@@ -4,78 +4,105 @@
 
 * {
     font-family:'Roboto', sans-serif;
-    font-size: 100%;
-    color:rgba(0, 0, 0);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
 }
+
 
 /* Navigation Bar */
 
-.navbar {
-    text-align: center;
+header {
     width:100%;
-    font-size: 35px;
-}
-
-.navtext {
-    padding:1em;
-    position: fixed;
-    color:floralwhite;
+    height: 10vh;
+    padding: 0 8%;
+    position: relative;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
 }
 
-.navtext .natitle {
-    display:inline;
-    padding-right: 3em;
+.homepage_body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/360_F_365755691_ylmF7k7q0wxMLIaeZdR7DcKBcKOf5Yot.jpeg) no-repeat;
+    background-size: cover;
 }
 
-.navtext .natitle .navhome {
-    text-decoration: none;
-    color: brown;
-}
-
-.navtext .navitem {
-    display: inline;
-    font-size: 80%;
-    text-decoration: none;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    margin: 0px 10px;
-}
-
-.backimg {
-    bottom: 20px;
-}
-
-.introduction {
-    z-index: 100;
-    position: absolute;
-    top: 70%;
+.nav-links {
+    padding: 18px 0;
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    text-transform:capitalize;
-    color: aliceblue;
-    word-wrap: break-word;
-    padding-left: 100px;
-    padding-right: 100px;
+    width:100%;
+    
 }
 
-.content {
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: x-large;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color:black;
+    padding: 5px 0;
+    position: relative;
+}
+
+.welcome {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 15%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    padding-bottom: 30px;
-    line-height: 30px;
     text-align: center;
-    font-size: large;
-    font-weight: bold;
 }
 
-.footer-list {
-    display: inline;
+.footer-list li{
+    display:inline-block;
+    margin: 15px;
+    text-align: center;
+    margin-bottom: 0;
 }
+
+figure.yichen_pic {
+    border: solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 200px;
+    max-height: 170px;
+}
+
+figcaption {
+    text-align: center;
+    font:italic smaller sans-serif;
+    padding:3px;
+}
+
+.about_body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/empty-minimal-wooden-top-table-wood-podium-in-white-background-with-green-leaves-for-product-presentation-mock-up-show-cosmetic-product-display-podium-stage-pedestal-or-platform-3d-free-vector.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.self-introduction {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
 
 
