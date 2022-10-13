@@ -28,8 +28,6 @@ header {
 }
 
 .homepage_body {
-    margin: 0;
-    padding: 0;
     background: url(../images/360_F_365755691_ylmF7k7q0wxMLIaeZdR7DcKBcKOf5Yot.jpeg) no-repeat;
     background-size: cover;
 }
@@ -121,22 +119,16 @@ figcaption {
 }
 
 .about_body {
-    margin: 0;
-    padding: 0;
     background: url(../images/empty-minimal-wooden-top-table-wood-podium-in-white-background-with-green-leaves-for-product-presentation-mock-up-show-cosmetic-product-display-podium-stage-pedestal-or-platform-3d-free-vector.jpeg) no-repeat;
     background-size: cover;
 }
 
 .self-introduction {
-    margin: 0;
-    padding: 0;
     text-align: center;
     margin-top: 30px;
 }
 
 .education-body {
-    margin: 0;
-    padding: 0;
     background: url(../images/mitchell-luo-xREzOtWzDrQ-unsplash-scaled.jpeg) no-repeat;
     background-size: cover;
 }
