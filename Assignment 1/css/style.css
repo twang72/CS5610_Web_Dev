@@ -32,6 +32,7 @@ html {
 .homepage_body {
     background: url(../images/360_F_365755691_ylmF7k7q0wxMLIaeZdR7DcKBcKOf5Yot.jpeg) no-repeat;
     background-size: cover;
+    background-color: #e6e6e6;
 }
 
 .homepage {
@@ -155,6 +156,20 @@ figcaption {
 
 .course-list {
     margin-top: 5px;
+}
+
+#themebutton{
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin-right: 5px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+.dark {
+    background: #222;
+    color: #e6e6e6;
 }
 
 
