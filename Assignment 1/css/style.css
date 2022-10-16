@@ -158,12 +158,11 @@ figcaption {
     margin-top: 5px;
 }
 
-#themebutton{
+.themebutton{
     justify-content: center;
     align-items: center;
     font-size: large;
     margin-right: 5px;
-    text-transform: uppercase;
     width: 150px;
 }
 
