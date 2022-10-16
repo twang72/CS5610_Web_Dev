@@ -171,5 +171,19 @@ figcaption {
     color: #e6e6e6;
 }
 
+.date-time {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.radio-div {
+    margin-top: 10px;
+}
+
+.submission-button {
+    margin-top: 10px;
+}
+
+
 
 
