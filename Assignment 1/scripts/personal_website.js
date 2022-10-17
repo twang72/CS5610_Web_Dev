@@ -26,7 +26,7 @@ if(localStorage.getItem('theme')){
 //Date and Time Functions
 const timeDisplay = document.querySelector('.date-time');
 const month_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const day_names = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+const day_names = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 timeDisplay.addEventListener('submit', function(event){
     const timeDisplayData = new FormData(timeDisplay);
