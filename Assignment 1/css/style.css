@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Override default information */
+
+* {
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Navigation Bar */
+
+header {
+    width:100%;
+    height: 10vh;
+    padding: 0 8%;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+}
+
+.homepage_body {
+    background: url(../images/360_F_365755691_ylmF7k7q0wxMLIaeZdR7DcKBcKOf5Yot.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.homepage {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-links {
+    padding: 18px 0;
+    text-align: center;
+    width:100%;
+    
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: x-large;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color:black;
+    padding: 5px 0;
+    position: relative;
+}
+
+.welcome {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 15%;
+}
+
+.nav-links li a:hover {
+    color: darkgray;
+}
+
+.nav-links li a:visited{
+    color: crimson;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-list li{
+    display:inline-block;
+    margin: 15px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.about-me{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+figure.yichen_pic {
+    border: solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 200px;
+    max-height: 170px;
+}
+
+figcaption {
+    text-align: center;
+    font:italic smaller sans-serif;
+    padding:3px;
+}
+
+.about_body {
+    background: url(../images/empty-minimal-wooden-top-table-wood-podium-in-white-background-with-green-leaves-for-product-presentation-mock-up-show-cosmetic-product-display-podium-stage-pedestal-or-platform-3d-free-vector.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.self-introduction {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.education-body {
+    background: url(../images/mitchell-luo-xREzOtWzDrQ-unsplash-scaled.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.education-main {
+    margin-top: 10px;
+    text-align: center;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-title {
+    color:slategrey;
+    font-family: fantasy;
+}
+
+.relevant-course {
+    color:slategray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.course-list {
+    margin-top: 5px;
+}
+
+
+
