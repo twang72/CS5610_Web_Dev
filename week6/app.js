@@ -1,5 +1,5 @@
- const fs = require('fs');
- const util = require('util');
+const fs = require('fs');
+const util = require('util');
 
 // const fs = require("fs");
 
@@ -24,7 +24,7 @@
 const readFilePromise = util.promisify(fs.readFile);
 const writeFilePromise = util.promisify(fs.writeFile);
 
-writeFilePromise('message.txt', 'hello')
+/* writeFilePromise('message.txt', 'hello')
  .then(() => {
     return readFilePromise('message.txt', {encoding:'utf-8'});
  })
@@ -33,10 +33,9 @@ writeFilePromise('message.txt', 'hello')
  })
  .catch((err) => {
     console.log(err);
- });
+ }); */
 
-
-
+ 
 
 const express = require("express");
 const router = require('./routes/tasks');
