@@ -39,13 +39,16 @@ const writeFilePromise = util.promisify(fs.writeFile);
 
 const express = require("express");
 const router = require('./routes/tasks');
+const {connectToDB} = require('./db');
 
 const app = express();
 const port = 3000;
+app.use(express.json());
+app.use(express.urlencoded());
 app.set ("views" , "views");
 app.set ("view engine", "pug" )
-app.use(express.static('public'));
-app.use('/tasks',router)
+app.use("/public",express.static('public'));
+app.use('/api/tasks',router)
 
 app.get("/", function (req, res) {
   res.send("hello world");
@@ -54,6 +57,7 @@ app.get("/", function (req, res) {
 
 app.listen(port, () => {
   console.log(`application is listening on port ${port}`);
+  connectToDB();
 });
  
 
