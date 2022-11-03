@@ -16,8 +16,11 @@
             <div class="card mt-3">
                 <div class="card-body">
                     <h3 class="card-title"><%= article.title %></h3>
-                    <div class="card-subtitle text-muted mb-2">
+                    <div class="card-subtitle text-muted mb-3">
                         <%= article.createdTime.toLocaleDateString() %>
+                    </div>
+                    <div class="card-text mb-2">
+                        <%= article.description %>
                     </div>
                 </div>
             </div>

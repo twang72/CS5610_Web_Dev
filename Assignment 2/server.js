@@ -20,5 +20,10 @@ app.get('/', (req, res) => {
     res.render('index', {articles: articles})
 })
 
+//render a 404 page for any undefined URLs.
+app.get('*', (req, res) => {
+    res.render('errorPage')
+})
+
 //pass in port 3000
 app.listen(3000)
