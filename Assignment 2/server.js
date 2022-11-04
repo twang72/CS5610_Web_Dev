@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
         createdTime: new Date(),
         description: 'Test Description'
     }]
-    res.render('index', {articles: articles})
+    res.render('articles/index', {articles: articles})
 })
 
 //render a 404 page for any undefined URLs.
