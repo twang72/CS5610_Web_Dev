@@ -1,18 +1,19 @@
 //declare express from the library
-const express = require ('express');
-const mongoose = require ('mongoose');
+const express = require ('express')
+const mongoose = require ('mongoose')
 const Article = require('./models/article')
 require('dotenv').config()
 const uri = process.env.mongodb_uri
-const articleRouter = require('./routes/articles');
+const articleRouter = require('./routes/articles')
 //import tthe method-override
 const methodOverride= require('method-override')
 //call the express as a function
-const app = express();
+const app = express()
+const PORT = process.env.PORT || 3030;
 
 //pass in port 3000
-app.listen(3000, () =>{
-    console.log('server running on port 3000.')
+app.listen(PORT, () =>{
+    console.log(`server running on port ${PORT}`)
 })
 
 //connect to mongodb through mongoose
