@@ -1,7 +1,8 @@
 //import mongoose
-const mongoose = require ('mongoose')
-const marked = require ('marked')
-const slugify = require ('slugify')
+const mongoose = require('mongoose')
+const {marked} = require('marked')
+const slugify = require('slugify')
+
 
 //create a schema
 const articleSchema = new mongoose.Schema({
@@ -33,6 +34,7 @@ articleSchema.pre('validate', function(next) {
         this.slug = slugify(this.title, { lower: true, strict: true })
     }
 
+    
     next()
 })
 

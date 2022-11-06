@@ -10,6 +10,16 @@ const methodOverride= require('method-override')
 //call the express as a function
 const app = express();
 
+//pass in port 3000
+app.listen(3000, () =>{
+    console.log('server running on port 3000.')
+})
+
+//connect to mongodb through mongoose
+mongoose.connect(uri)
+.then(() => console.log('MongoDB connection established.'))
+.catch((error) => console.error('Mongodb connection failed:', error.message))
+
 
 //set up the view engine
 app.set('view engine', 'ejs')
@@ -36,12 +46,3 @@ app.get('*', (req, res) => {
     res.render('errorPage')
 })
 
-//pass in port 3000
-app.listen(3000, () =>{
-    console.log('server running on port 3000.')
-})
-
-//connect to mongodb through mongoose
-mongoose.connect(uri)
-.then(() => console.log('MongoDB connection established.'))
-.catch((error) => console.error('Mongodb connection failed:', error.message))
