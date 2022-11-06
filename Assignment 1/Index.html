@@ -8,21 +8,39 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <script src="https://kit.fontawesome.com/b7ae1646de.js" crossorigin="anonymous"></script>
+    <script defer src="scripts/personal_website.js"></script>
 </head>
 
 <body class="homepage_body">
-    <header class="navbar">
-        <nav>
+    <header>
+        <nav class="navbar">
             <ul class="nav-links">
                 <li><a class="navitem" href="Index.html">Home</a></li>
                 <li><a class="navitem" href="about.html">About Me</a></li>
                 <li><a class="navitem" href="education.html">Education</a></li>
-            </ul>    
+            </ul>
+            <button class="themebutton">Dark</button>    
         </nav>
     </header>
 
     <main class="homepage">
         <p class="welcome">Welcome to my personal website.</p>
+        <form class="date-time">
+            <p>Check out the time in your preferred format</p>
+            <div class="radio-div">
+                <label>
+                    <input type="radio" id="radio-date" name="time-display" value="date"/>
+                    Date
+                </label>
+                <label>
+                    <input type="radio" id="radio-time" name="time-display" value="time"/>
+                    Time
+                </label>
+            </div>
+            <div>
+                <button class="submission-button">Submit</button>
+            </div>
+        </form>
     </main>
 
     
