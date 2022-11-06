@@ -12,7 +12,7 @@
         <h1 class="mb-1"><%= article.title %></h1>
         <div class="text-muted mb-2"><%= article.createdTime.toLocaleDateString() %></div>
         <a href="/" class="btn btn-primary mb-3">Home Page</a>
-        <a href="/articles/edit/<%= article.id %>" class="btn btn-info mb-3">Edit</a>
+        <a href="/articles/edit/<%= article.slug %>" class="btn btn-info mb-3">Edit</a>
         <div><%= article.markdown %></div>
     </div>
 </body>

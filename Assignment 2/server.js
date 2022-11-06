@@ -5,6 +5,8 @@ const Article = require('./models/article')
 require('dotenv').config()
 const uri = process.env.mongodb_uri
 const articleRouter = require('./routes/articles');
+//import tthe method-override
+const methodOverride= require('method-override')
 //call the express as a function
 const app = express();
 
@@ -14,6 +16,9 @@ app.set('view engine', 'ejs')
 
 //tell express to access to the form
 app.use(express.urlencoded({extended: false}))
+
+//tell express to use method-override
+app.use(methodOverride('_method'))
 
 //Pass all blog articles
 app.get('/', async (req, res) => {

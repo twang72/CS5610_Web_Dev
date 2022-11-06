@@ -8,8 +8,8 @@ router.get('/new', (req, res) => {
     res.render('articles/new', { article: new Article()})
 })
 
-router.get('/:id', async (req, res) => {
-    const article = await Article.findById(req.params.id)
+router.get('/:slug', async (req, res) => {
+    const article = await Article.findOne({ slug: req.params.slug })
     if (article == null) res.redirect('/')
     //render the blog page that has just been created.
     res.render('articles/show', { article: article })
@@ -26,11 +26,16 @@ router.post('/', async (req, res) => {
         //update our article with the new saved article
         article = await article.save()
         //if saved successfully, redirect to the article id.
-        res.redirect(`/articles/${article.id}`)
+        res.redirect(`/articles/${article.slug}`)
     } catch (e) {
         res.render('articles/new', { article: article })
     }
     
+})
+
+router.delete('/:id', async (req, res) => {
+    await Article.findByIdAndDelete(req.params.id)
+    res.redirect('/')
 })
 
 //whenever we require this js file, we will read from this router.
