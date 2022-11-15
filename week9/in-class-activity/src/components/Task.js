@@ -13,9 +13,7 @@ export default function Task ({task, deleteHandler}) {
                 <div>
                     <p>{task.date}</p>
                 </div>
-
             </div>
-
         </li>
     );
 }
