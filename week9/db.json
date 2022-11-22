@@ -1,4 +1,22 @@
 {
+  "user": [
+    {
+      "id": 1,
+      "name": "Neda",
+      "task": 1
+    },
+    {
+      "id": 2,
+      "name": "Dan",
+      "task": 3
+    },
+    {
+      "id": 3,
+      "name": "Adam",
+      "task": 3
+    }
+  ],
+
   "tasks": [
     {
       "title": "Week 10",

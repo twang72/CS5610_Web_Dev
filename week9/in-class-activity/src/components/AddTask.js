@@ -1,8 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function AddTask() {
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
+  let navigate = useNavigate();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("submitted", { title: title, date: date });
@@ -15,6 +18,7 @@ export default function AddTask() {
       if (!response.ok) {
         throw new Error(`Http error! Status: ${response.status} `);
       }
+      navigate("/tasks");
     } catch (err){
       console.log ('post', err);
     }

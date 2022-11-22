@@ -6,6 +6,9 @@ export default function Task ({task, deleteHandler}) {
         <li>
             <div className='taskContainer'>
                 <div className='iconNameContainer'>
+                    <p>
+                        <Link to={`/tasks/${task.id}`}></Link>
+                    </p>
                     <p>{task.title}</p>
                     <FaTimes onClick = {() => deleteHandler(task.id)}
                      />
